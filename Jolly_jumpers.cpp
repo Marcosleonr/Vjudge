@@ -38,7 +38,7 @@ int main(){
 	
 	if(vec_cad.size()>2){
 		
-		tam_cadena = vec_cad.size()-1;
+		tam_cadena = vec_cad.size()-2;
 		
 		for(j=1;j<(vec_cad.size()-1);j++){
 			
@@ -56,7 +56,7 @@ int main(){
 			cout<<"Not jolly";
 		}
 	}else{
-		if(vec_cad.size()!=0){
+		if(vec_cad.size()!=0 && vec_cat.at(0)!=0){
 			cout<<"Jolly";
 		}
 	}
