@@ -36,7 +36,7 @@ int main(){
 		}
 	}
 	
-	if(vec_cad.size()>1){
+	if(vec_cad.size()>2 || vec_cad.size()!=0){
 		
 		tam_cadena = vec_cad.size()-1;
 		
