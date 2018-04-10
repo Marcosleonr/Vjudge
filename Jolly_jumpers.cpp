@@ -36,11 +36,12 @@ int main(){
 		}
 	}
 	
-	if(vec_cad.size()>2 || vec_cad.size()!=0){
+	if(vec_cad.size()>2){
 		
 		tam_cadena = vec_cad.size()-1;
 		
-		for(j=1;j<(vec_cad.size()-1);j++){
+		for(j=1;j<=(vec_cad.size()-1);j++){
+			
 			absoluto = abs(vec_cad[j]-vec_cad[j+1]);
 			tam_cadena--;
 			
@@ -55,7 +56,9 @@ int main(){
 			cout<<"Not jolly";
 		}
 	}else{
-		cout<<"Jolly";
+		if(vec_cad.size()!=0){
+			cout<<"Jolly";
+		}
 	}
 }
 	
